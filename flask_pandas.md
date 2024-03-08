@@ -35,3 +35,11 @@ $ # (Unix/Mac) export FLASK_ENV=development
 $
 $ flask run --host=0.0.0.0 --port=31201
 ```
+## Build image
+
+```bash
+docker build -t flask-pandas .
+docker image tag flask-pandas:latest lvscls/flask-pandas:latest
+docker push lvscls/flask-pandas:latest
+docker run -d --name flask-pandas -p 31201:31201 flask-pandas
+```
