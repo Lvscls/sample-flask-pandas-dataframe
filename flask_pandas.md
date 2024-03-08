@@ -44,8 +44,12 @@ docker push lvscls/flask-pandas:latest
 docker run -d --name flask-pandas -p 31201:31201 flask-pandas
 ```
 
+## Connexion avec le plugin Jenkins sur goland
+
+On ajoute l'ip du serveur et nos credentials avant de pouvoir build depuis l'IDE
+
 ## Docker Jenkins
-On créer un nouveau job dans jenkins et dans le shell execute script
+On créer un nouveau job dans jenkins et dans le shell execute script et on ajoute le job jmeter a la fin de l'execution de celui ci
 ```bash
 echo '
 #docker build -t flask-pandas .
