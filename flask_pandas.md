@@ -1,3 +1,6 @@
+## Set up
+
+```bash
 $ # Clone sources
 $ git clone https://github.com/app-generator/flask-pandas-dataframe.git
 $ cd flask-pandas-dataframe
@@ -31,3 +34,4 @@ $ # Set up the DEBUG environment
 $ # (Unix/Mac) export FLASK_ENV=development
 $
 $ flask run --host=0.0.0.0 --port=31201
+```
