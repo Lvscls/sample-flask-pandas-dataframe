@@ -60,3 +60,11 @@ echo '
 #docker push lvscls/flask-pandas:latest
 ```
 '
+
+## View
+
+Créer une vue pipeline
+
+## Webhook
+
+Faire le webhook sur github
