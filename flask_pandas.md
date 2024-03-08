@@ -43,3 +43,16 @@ docker image tag flask-pandas:latest lvscls/flask-pandas:latest
 docker push lvscls/flask-pandas:latest
 docker run -d --name flask-pandas -p 31201:31201 flask-pandas
 ```
+
+## Docker Jenkins
+On créer un nouveau job dans jenkins et dans le shell execute script
+```bash
+echo '
+#docker build -t flask-pandas .
+#docker run -d --name flask-pandas -p 31201:31201 flask-pandas
+
+#docker login -u lvscls
+#docker image tag flask-pandas:latest lvscls/flask-pandas:latest
+#docker push lvscls/flask-pandas:latest
+```
+'
